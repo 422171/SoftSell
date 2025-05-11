@@ -1,3 +1,29 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Adjusted themes with hints of white and black */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #4caf50;
+  --secondary-color: #f4f4f4;
+  --accent-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --primary-color: #6a5acd;
+  --secondary-color: #2e2e2e;
+  --accent-color: #ffffff;
+}
+
 .App {
   text-align: center;
 }
@@ -7,19 +33,193 @@
   pointer-events: none;
 }
 
+/* Header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 2rem;
+}
+.cta-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 1rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 1rem;
+}
+.cta-button {
+  background-color: var(--secondary-color);
   color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.cta-button:hover {
+  background-color: var(--primary-color);
 }
 
-.App-link {
-  color: #61dafb;
+.toggle-dark-mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.App-header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 2rem;
+}
+.cta-button {
+  background-color: #1c3b6d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.cta-button:hover {
+  background-color: #1c1853;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.step {
+  text-align: center;
+  max-width: 200px;
+}
+.step img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* Updated GIF sections with full green and purple shades */
+.how-it-works .step img {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.why-choose-us li {
+  text-align: center;
+  max-width: 200px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.why-choose-us li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.why-choose-us li img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* Updated GIF sections with full green and purple shades */
+.why-choose-us li img {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure consistent rendering of GIFs */
+.why-choose-us li img,
+.how-it-works .step img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+.testimonial {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.contact-form form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form label {
+  margin-bottom: 1rem;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover {
+  background-color: var(--primary-color);
 }
 
 .heart {
@@ -28,4 +228,43 @@
 
 .small {
   font-size: 0.75rem;
+}
+
+/* Ensure success message visibility */
+.success-message {
+  display: block;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0;
+}
+
+/* Footer links styling */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.footer-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 }

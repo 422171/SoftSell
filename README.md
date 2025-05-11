@@ -1,70 +1,69 @@
-# GitHub Codespaces ♥️ React
+# SoftSell - Software Resale Simplified
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+## Features Implemented
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+1. **Hero Section**:
+   - Headline and subheading.
+   - Two CTA buttons: "Get a Quote" and "Sell License".
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+2. **How It Works Section**:
+   - Three steps with GIFs: "Upload License", "Get Valuation", and "Get Paid".
+   - Consistent styling with green and purple shades.
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+3. **Why Choose Us Section**:
+   - Four key points with icons: "Trusted", "Secure", "Fast", and "Support".
+   - Hover effects and consistent rendering of icons.
 
-## Available Scripts
+4. **Customer Testimonials Section**:
+   - Two dummy reviews with names, roles, and companies.
 
-In the project directory, you can run:
+5. **Contact Form**:
+   - Fields: Name, Email, Company, License Type (dropdown), and Message.
+   - Frontend validation for required fields.
+   - Displays a success message after submission without refreshing the page.
 
-### `npm start`
+6. **Light/Dark Mode Toggle**:
+   - Sun/Moon icon toggle.
+   - Light mode: Green and white theme.
+   - Dark mode: Purple and black theme with proper text contrast.
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+7. **Responsive Design**:
+   - Mobile-friendly layout.
+   - Consistent spacing and alignment across sections.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+8. **SEO Enhancements**:
+   - Meta tags for description, keywords, and author.
+   - Open Graph and Twitter meta tags for better social media sharing.
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+9. **Footer**:
+   - Simple footer with copyright information.
 
-### `npm test`
+## Design Choices
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Color Palette**:
+  - Light mode: Green and white for a fresh and professional look.
+  - Dark mode: Purple and black for a modern and elegant feel.
 
-### `npm run build`
+- **Typography**:
+  - Clean and readable font (Arial).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Animations**:
+  - Subtle hover effects for buttons and icons.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Consistency**:
+  - Uniform padding, margins, and font sizes across sections.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Time Spent
 
-## Learn More
+- **Initial Setup**: 1 hour
+- **Hero Section**: 30 minutes
+- **How It Works Section**: 45 minutes
+- **Why Choose Us Section**: 45 minutes
+- **Customer Testimonials Section**: 30 minutes
+- **Contact Form**: 1 hour
+- **Light/Dark Mode Toggle**: 1 hour
+- **Responsive Design**: 1 hour
+- **SEO Enhancements**: 30 minutes
+- **Final Adjustments and Testing**: 1 hour
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
-
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
-
-### Advanced Configuration
-
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
-
-### Deployment
-
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
-
-### Troubleshooting
-
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+**Total Time Spent**: ~8 hours
