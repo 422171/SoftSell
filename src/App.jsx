@@ -16,7 +16,7 @@ function App() {
   };
 
    const scrollToContactForm = () => {
-    const section = document.getElementById('contact-form');
+    const section = document.getElementByClassName('contact-form');
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
