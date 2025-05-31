@@ -15,14 +15,22 @@ function App() {
     setFormSubmitted(true);
   };
 
+   const scrollToContactForm = () => {
+    const section = document.getElementById('contact-form');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
     <div className={`App ${darkMode ? 'dark' : 'light'}`}>
       <header className="App-header">
         <h1>SoftSell</h1>
         <p>Your trusted partner in software resale</p>
         <div className="cta-buttons">
-          <button className="cta-button">Get a Quote</button>
-          <button className="cta-button">Sell License</button>
+          <button className="cta-button" onClick={scrollToContactForm}>Get a Quote</button>
+          <button className="cta-button" onClick={scrollToContactForm}>Sell License</button>
         </div>
         <button className="toggle-dark-mode" onClick={toggleDarkMode}>
           {darkMode ? '🌙' : '☀️'}
